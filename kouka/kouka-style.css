@@ -1,0 +1,156 @@
+body {  
+	background-color: #ffffff; 
+	font-family:'ヒラギノ角ゴ Pro W3',
+	 'Hiragino Kaku Gothic Pro', 
+	'メイリオ', Meiryo,
+	'ＭＳ Ｐゴシック', 'MS PGothic',
+	 sans-serif;
+
+}
+
+#container {
+        width : 800px;
+        margin : 20px auto;
+}
+
+#header {
+	margin : 20px 0;
+        height:180px;
+}
+
+
+#menu {
+	float: left;
+	width: 200px;
+	padding: 0 0 0 15px;
+	font-size: 14px;
+}
+
+#menu li{
+	list-style-type: none;
+	background-image: url(sankaku.png);
+	
+	background-repeat: no-repeat;
+
+	background-position: left;
+	margin-left: -18px;
+
+	padding-left: 18px;
+}
+
+#main {
+	float: right;
+	width: 580px;
+	padding: 25px 0 20px 0;
+	line-height: 1.5;
+}
+
+#footer {
+	clear: both;
+	margin : 0 60px;
+	padding: 10px 0;
+        width: auto;
+	border-top:solid 1px #666666;
+	background-color: #ffffff;
+        font-size: 14px;
+        line-height: 1.4;        
+        text-align: center;
+}
+
+.footer-link ul{
+	margin : 0;
+	padding: 0;
+}
+.footer-link li{
+	display: inline;
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: solid 1px #666666;
+}
+.footer-link li a{
+	text-decoration: none;
+	color: #666666;
+}
+.footer-link li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	border-left: none;
+}
+
+h1 {
+	padding: 18px 25px;
+	font-size: 26px;
+color : #ffffe0;
+	text-shadow: 0 0 15px #000080,
+	0 0 15px #000080,
+	0 0 15px #000080,
+	0 0 15px #000080;
+}
+
+h2 {
+        font-size:24px;
+        margin:0;
+	padding:0;
+}
+
+h3 {
+        margin:0;
+	font-size:24px;
+        color: #666633;
+	text-shadow: 2px 2px 2px #999999;
+}
+
+h4 {
+         margin:0;
+	font-size:18px;
+	color: #ff0000;
+	display:inline;
+}
+h5 {
+         margin:0;
+	font-size:16px;
+	color: #ff0000;
+	display:inline;
+}
+
+#main .comment{
+	padding: 0 10px;
+	font-size:16px;
+        color: #666633;
+}
+#main .kiji{
+	margin:0;
+	font-size:16px;
+}
+
+#main .kashi{
+	margin:0;
+	padding-left: 1em;
+	text-indent: -1em;
+	font-size:16px;
+}
+
+.koushou{
+	float:right;
+	padding: 0 30px;
+}
+
+.photo-left{
+	float:left;
+	margin: 0 15px 15px 0;
+	text-align:center;
+	font-size:14px;
+}
+
+.photo-right{
+	float:right;
+	margin: 0 0 15px 15px;
+	text-align:center;
+	font-size:14px;
+}
+
+
+ul {
+         padding : 30px 5px 5px 5px; 
+}

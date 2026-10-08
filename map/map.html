@@ -1,0 +1,572 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>さぬきマップ
+</title>
+<link rel="stylesheet" type="text/css">
+<style type="text/css">
+body {  
+	background-color: #ffffff; 
+	font-family:'ヒラギノ角ゴ Pro W3',
+	 'Hiragino Kaku Gothic Pro', 
+	'メイリオ', Meiryo,
+	'ＭＳ Ｐゴシック', 'MS PGothic',
+	 sans-serif;
+}
+
+#container {
+        width : 950px;
+        margin : 20px auto;
+}
+
+#header {
+	margin : 20px auto;
+	width : 600px;
+	text-align: center;  
+}
+
+#main1 {
+	width: 950px;
+	margin : 20px auto;
+	font-size:16px;
+	line-height: 1.5;
+}
+
+#main1 table{
+	border-collapse:collapse;
+	border:solid 1px;
+	}
+
+#main1 th{
+	padding:8px;
+	border:solid 1px;
+	font-size: 14px;
+}
+
+#main1 td{
+	width: 16%;
+	padding:5px;
+	border:solid 1px;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+#main2 {
+	width:800px;
+	margin : 50px auto 20px auto;
+	font-size:16px;
+	line-height: 1.5;
+}
+
+#main2 table{
+	width: 550px;
+	margin : 0 10px 0 30px;
+	border-collapse:collapse;
+	border:solid 1px;
+}
+#main2 td{
+	padding:5px;
+	border:solid 1px;
+}
+
+h2 {
+ 	color:#ff0000;
+	display:inline;
+	font-size:20px;
+}
+
+h4 {
+	display:inline;
+	font-size:16px;
+}
+
+#footer {
+	margin : 20px 40px;
+	border-top:solid 1px #999999;
+	background-color: #ffffff;
+}
+
+
+
+#footer ul {
+	margin : 0 ;
+	padding : 0 ; 
+	padding-top : 20px ;
+	font-size: 14px;
+	font-weight: bold;        
+        text-align: center;         
+}
+
+#footer li{
+	display: inline;
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 20px;
+	border-left: solid 2px #ffffff;
+}
+#footer li a{
+	text-decoration: none;
+	color: #666666;
+}
+#footer li:first-child {
+	margin-left: 0;
+	padding-left: 0;
+	border-left: none;
+}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+
+<div id="header">
+<img src="map.gif" alt="さぬきマップ（卒業生の店）" width="597" height="60">
+<br>
+<br>
+
+</div>
+
+<div id="main1">
+卒業生のお店を紹介します。<br>
+他にも、紹介したい卒業生のお店があれば<a href="mailto:doi@ab.mbn.or.jp">連絡</a>して下さい。
+<br><br>
+
+<table>
+<tr>
+<th>洋食、中華</th>
+<th>うどん</th>
+<th>喫茶、バー、ホテル</th>
+<th>その他</th>
+<th>関東以外</th>
+</tr>
+
+<tr>
+
+<td>
+<a href="#yoshinobo">点心・中華風料理<br>
+「吉乃坊」</a><br>
+地下鉄三越前駅<br>
+吉野頼寿(28年卒)
+</td>
+<td>
+<a href="#iteki">一滴八銭屋</a><br>
+新宿区西新宿<br>
+大藪恵弘(34年卒)
+</td>
+<td>
+<a href="#cocomond">サロン・ド・ギャラリー「ココモンド」</a><br>
+ＪＲ国立駅北口<br>
+瀬尾洋子(42年卒)<br>
+</td>
+<td>
+<a href="#sunaga">スナガ時計宝飾店</a><br>
+京王線代田橋駅<br>
+須永玲子(37年卒)
+</td>
+<td>
+<a href="#magucom">マグカップ制作MAGCOM</a><br>
+愛知県尾張旭市<br>
+宮崎高子(41年卒)
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="#parkpasta">パークパスタ</a> <br>
+ＪＲ大森駅<br>
+大橋圭見(61年卒)　
+</td>
+
+<td>
+<a href="#dedesuke">饂飩でですけ</a><br>
+渋谷区恵比寿<br>
+千葉君代(47年卒)
+</td>
+
+
+<td>
+<a href="#plumm">ホテルプラム</a><br>
+横浜駅前<br>
+平山敦子(47年卒)
+</td>
+<td>
+<a href="#kaniwa">婦人輸入雑貨<br>
+カニワトーキョ</a><br>
+港区赤坂<br>
+岩井耀子(42年卒)
+</td>
+<td>
+<a href="#sweetmelody">ミュージックカフェ・スイートメロディー</a><br>
+夙川駅（西宮市）<br>
+清水正秋(46年卒)
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+
+</td>
+
+<td>
+<a href="#beroncho">バー・べろんちょ</a><br>
+中央区銀座<br>
+森英二(58年卒)
+</td>
+<td>
+<a href="#inf">家庭教師センター<br>
+ＩＮＦ</a><br>
+横浜市保土ヶ谷区<br>
+白濱秀樹(49年卒)
+</td>
+<td>
+<a href="#kocho">スナック胡蝶</a><br>
+高松市古馬場町<br>
+久保仁美(48年卒)
+</td>
+</tr>
+
+<tr>
+<td>
+</td>
+<td>
+
+</td>
+
+<td>
+　
+</td>
+<td>
+　
+</td>
+<td>
+<a href="#tomarigi">大三島　素泊り茶房<br>
+トマリギ</a><br>
+今治市大三島町宮浦88<br>
+森(中村)美咲(H17卒)
+</td>
+</tr>
+
+
+</table>
+</div>
+
+<div id="main2">
+<h4>大三島　素泊り茶房</h4>
+<h2 id="tomarigi">トマリギ</h2>
+
+<img src="tomarigi.png" align="right">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">森(中村)美咲(H17卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>愛媛県今治市大三島町宮浦88<br>
+ TEL:080-8493-5416<br>
+<a href="https://oomishimatomarigi.wixsite.com/tomarigi">「トマリギ」のホームページ</a>
+</td>
+</tr>
+<tr>
+<td>あきない</td><td>年中無休</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>食事提供なしの素泊まり宿<br>
+
+大三島観光の中心地、大山祇神社まで歩いて10分<br>
+
+近隣にコンビニ・スーパー・温浴施設などがあり<br>
+一般的なドミトリーに比べ安心・快適な工夫がいっぱい<br>
+
+サイクリストにやさしい施設・サービス<br>
+
+オーナーこだわりのお茶が愉しめます</td>
+</tr>
+</table>
+
+
+
+<br>
+
+
+<h4>スナック</h4><h2 id="kocho">胡蝶</h2>
+
+<img src="kocho.png" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">久保仁美(S48卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>高松市古馬場町8-11　2F<br>
+ TEL:087-823-7434<br>
+
+
+</td>
+</tr>
+<tr>
+<td>あきない</td><td>　</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>　</td>
+</tr>
+</table>
+<br>
+
+
+<h4>バー</h4><h2 id="beroncho">べろんちょ</h2><br>
+
+<img src="beroncho.png" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">森英二(58卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>中央区銀座８－８－７　第３ソワレドビルＢ１<br>
+ TEL:03-3571-8006<br>
+<a href="http://www.veroncho.jp/">お店のホームページ</a><br>
+</td>
+</tr>
+<tr>
+<td>あきない</td><td>月－土　夕方から未明(？)まで　日・祝は応相談</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>東京玉翠会のたまり場
+</td>
+</tr>
+</table>
+<br>
+
+<h4>ホテル</h4><h2 id="plumm">プラム</h2><br>
+<img src="cosmo.gif" align="right" width="200" height="200">
+<table>
+<tr>
+ <td width="20%">あるじ</td><td width="80%">平山(福山)敦子(47卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>横浜市西区北幸２－９－１　045(314)3111<br>
+横浜駅西口より徒歩７分<br></td>
+</tr>
+<tr>
+<td>あきない</td><td>年中無休</td>
+</tr>
+<td>Ｐ  Ｒ</td><td>チャペルもある本格的シティホテル。<br>
+レストラン「菜心賓館」は横浜中華街のお店よりも美味しいと評判。同窓会にも最適。<br>
+ホテルのHPは<a href="http://www.hotel-plumm.jp" target="_blank">こちら。</a></td></tr>
+</table>
+<br>
+
+
+<br>
+<h4>創作うどん・こだわり厨房</h4><h2 id="iteki">一滴八銭屋</h2><br>
+<img src="itteki.gif" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">大藪恵弘(３４年卒)・(実際の営業は、お子さんたち)</td>
+</tr>
+<tr>
+<td>ところ</td><td>新宿区西新宿１－１５－９柳沢ビル２F・３F<br>
+03(3342)8889<br>
+JR新宿駅西口　徒歩３分<br>
+</td>
+</tr>
+<tr>
+<td>あきない</td><td>平日11:00-23:00  年中無休<br>
+</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>黒おでんが名物
+</td>
+</tr>
+</table>
+<br>
+<h4>饂飩</h4><h2 id="dedesuke">でですけ</h2><br>
+<img src="dedesuke.png" align="right" width="200" height="200">
+<table>
+<tr>
+ <td width="20%">あるじ</td><td width="80%">千葉(十河)君代(47年卒)・社長が実弟</td>
+</tr>
+<tr>
+<td>ところ</td><td>渋谷区恵比寿1-8-14大黒ビル2F　03(3444)5511<br>
+JR恵比寿駅西口を出て、徒歩40秒<br>
+<a href="http://www.dedesuke.com/ebisu/">お品書き・道順など詳細はこちら</a>
+</td>
+</tr>
+<tr>
+<td>あきない</td><td>昼　11時30分～14時<br>
+夜　17時～4時（ラストオーダー 3時）<br>
+日・祭日 17時～24時（ラストオーダー 11時）<br>
+</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>さぬきで修行した本場さぬきうどん<br>
+夜はお酒も飲める
+</a></td></tr>
+</table>
+<br>
+<h4>婦人輸入雑貨</h4><h2 id="kaniwa">カニワトーキョ</h2>
+<br>
+<img src="kaniwa.gif" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">岩井耀子（４２年卒）</td>
+</tr>
+<tr>
+<td>ところ</td><td>港区赤坂９－６－２７カーム乃木坂１Ｆ　03(3401)4509<br>
+千代田線・乃木坂駅・３番出口より徒歩２分<br></td>
+</tr>
+<tr>
+<td>あきない</td><td>朝１０時から夜７時　日・祝休み</td>
+</tr>
+</table>
+<br>
+<br>
+
+<h4>点心・中華風料理</h4><h2 id="yoshinobo">吉乃坊</h2><br>
+<img src="yosino.gif" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">吉野　頼寿（２８年卒）</td>
+</tr>
+<tr>
+<td>ところ</td><td>中央区日本橋室町１－１１－６　03(3241)6764<br>
+地下鉄半蔵門線三越前駅より徒歩２分</td>
+</tr>
+<tr>
+<td>あきない</td><td>昼１１時から２時、夕方５時から１０時（土・日は昼のみ）</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>餃子（ピリカラ、チョイカラ、パリパリ）は美味しくて、評判がいい。</td></tr>
+</table>
+<br>
+<h4>スパゲッティー・オーブン料理</h4><h2 id="parkpasta">パークパスタ</h2>
+<br>
+<img src="parkpasta.png" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">大橋(十河)圭見(６１年卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>大田区山王２－２－１４　03(3776)5596<br>
+ＪＲ大森駅すぐ<br></td>
+</tr>
+<tr>
+<td>あきない</td><td>11:30-15:00 17:30-21:30　日休み</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>クリームスパゲッティ９５０円より　<br>
+チャイニーズスパゲッティ１０００円より</td></tr>
+</table>
+<br>
+<h4>時計宝飾</h4><h2 id="sunaga">スナガ時計宝飾店</h2>
+<br>
+<img src="hakushi.png" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">須永玲子（３７年卒）</td>
+</tr>
+<tr>
+<td>ところ</td><td>杉並区和泉２－３３－１９　03(3323)5295<br>
+京王線代田橋駅　仲通り商店街徒歩８分</td>
+</tr>
+<tr>
+<td>あきない</td><td>９時～２０時　年中無休</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>古時計の修理、指輪の再生もいたします。</td></tr>
+</table>
+<br>
+<h4>サロン・ド・ギャラリー</h4><h2 id="cocomond">ココモンド</h2>
+<br>
+<img src="kokomont.gif" align="right" width="200" height="200">
+<table>
+<tr>
+<td width="20%">あるじ</td><td width="80%">瀬尾洋子（４２年卒）</td>
+</tr>
+<tr>
+<td>ところ</td><td>国分寺市光町１－４２－８　0425(77)5790<br>
+ＪＲ国立駅北口　徒歩３分</td>
+</tr>
+<tr>
+<td>あきない</td><td>１１時から１８時　月曜定休</td>
+</tr>
+<tr>
+<td>Ｐ  Ｒ</td><td>アンティーク家具の中で、ホームメイドケーキが楽しめます。</td></tr>
+</table>
+<br>
+<h4>家庭教師センター</h4><h2 id="inf">ＩＮＦ</h2>
+<br>
+<img src="hakushi.png" align="right" width="200" height="200">
+<table>
+<tr>
+ <td width="20%">あるじ</td><td width="80%">白濱秀樹(49年卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>横浜本部 横浜市保土ヶ谷区岩井町１０－９第三島蔵屋ビル２Ｆ．３Ｆ
+<br>TEL 045(331)7587</td>
+</tr>
+<td>Ｐ  Ｒ</td><td>高高卒業生のための高高卒業生による家庭教師センター。<br><br>
+東京の大学に通っている高高卒業生には、安心して働けるアルバイト先の提供を、高高OBには、安心して頼める家庭教師を、という良好な関係を目指している。<br>
+<a href="http://www.inf-tutor.com/">対象生徒、授業料などはこちらのページを</a><br>
+<a href="mailto:shirahama@inf-tutor.com">問い合わせはこちらに</a></td></tr>
+</table>
+<br>
+<h4>ミュージックカフェ</h4><h2 id="sweetmelody">スイートメロディー</h2>
+<br>
+<img src="sweetmelody.png" align="right" width="200" height="200">
+<table>
+<tr>
+ <td width="20%">あるじ</td><td width="80%">清水正秋(46年卒)</td>
+</tr>
+<tr>
+<td>ところ</td>
+<td>
+〒662-0047 兵庫県西宮市寿町２-23寿ハイツ102
+<br>
+TEL　090-3546-4498<br></td>
+</tr>
+<td>Ｐ  Ｒ</td><td>西宮夙川のはずれにある隠れ家のような小さな音楽喫茶店。永遠の名曲、あの頃のヒット曲をBGMに、しばし時を忘れておくつろぎください。<br>
+<a href="http://s-melody.jp/">スイートメロディーのサイト</a>
+</tr>
+</table>
+<br>
+<h4>マグカップの制作</h4><h2 id="magucom">MAGCOM</h2>
+<br>
+<h4>オリジナル食器、雑貨販売</h4><h2>e-tabletops</h2>
+<br>
+<img src="hakushi.png" align="right" width="200" height="200">
+<table>
+<tr>
+ <td width="20%">あるじ</td><td width="80%">宮崎高子(41年卒)</td>
+</tr>
+<tr>
+<td>ところ</td><td>愛知県尾張旭市狩宿新町2-93<br>
+TEL  0561-53-9511<br>
+ 株式会社　ミヤザキクリエイト<br>
+</td>
+</tr>
+<td>Ｐ  Ｒ</td><td>マグコム<br>
+　オリジナルマグカップの制作。<br>
+　マグカップは毎日使ってもらえる広告塔。<br>
+　<a href="http://www.m-creates.co.jp/mugcom/">詳細、注文はこちらで</a><br>
+イーテーブルトップス<br>
+　希望のイニシャル・星座マークで創作するプチオリジナル食器＆ダビデの星アクセサリーの販売<br>
+　日本列島は龍の形に似ているという発想からデザインされた“龍国日本”グッズの販売<br>
+</td></tr>
+</table>
+<br>
+
+</div>
+
+<div id="footer">
+<ul>
+<li><a href="../index.html">高松高校東京玉翠会TOPページ</a></li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

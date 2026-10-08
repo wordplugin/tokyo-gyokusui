@@ -1,0 +1,56 @@
+body {  
+	background-color: #ffffff; 
+	line-height: 1.4; 
+}
+
+* { 
+        padding : 0px ; 
+　　　　margin : 0px ; 
+} 
+
+#container {
+	width : 800px;
+	margin : 0 auto;
+}
+
+#main{ 
+	width : 800px;
+	margin : 20px 0 0 0;
+}
+
+#footer{
+	margin : 20px 0;
+	border-top:solid 1px #999999;
+	padding-top : 20px ;
+	font-size: 14px;
+	font-weight: bold;        
+	text-align: center;
+}
+
+#footer a{
+	text-decoration: none;
+	color: #666666;
+}
+
+
+table {
+	border: none; 
+}
+
+caption {
+	padding-bottom: 5px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+th {
+	padding: 17px 0 8px 0;
+
+}
+
+td {
+	padding:4px; 
+	vertical-align:top;
+	text-align: left;
+	font-size: 16px;
+}
